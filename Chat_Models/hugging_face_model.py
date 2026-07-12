@@ -14,9 +14,7 @@ llm = HuggingFaceEndpoint(
     )
 )
 
-
 model = ChatHuggingFace(llm=llm)
-
 
 response = model.invoke(
     "What is the capital of UK?"
