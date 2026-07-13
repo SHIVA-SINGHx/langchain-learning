@@ -1,0 +1,17 @@
+{
+    "name": null,
+    "input_variables": [
+        "game_input",
+        "game_length",
+        "game_style"
+    ],
+    "optional_variables": [],
+    "output_parser": null,
+    "partial_variables": {},
+    "metadata": null,
+    "tags": null,
+    "template": "\nPlease explain the game titled \"{game_input}\" with the following specifications:\nExplanation Style: {game_style}  \nExplanation Length: {game_length}  \n1. Game Overview:\n   - Explain the basic idea and objective of the game.\n   - Describe the rules and how the game is played.\n2. Strategies and Techniques:\n   - Explain important strategies, tactics, and tips to improve gameplay.\n   - Include examples or scenarios where applicable.\n3. Analogies:\n   - Use relatable real-world analogies to simplify complex game concepts.\n4. Beginner Guidance:\n   - Explain how a beginner can start learning and practicing this game.\n\nIf certain information is not available about the game, respond with: \"Insufficient information available\" instead of guessing.\nEnsure the explanation is clear, accurate, and aligned with the provided style and length.\n",
+    "template_format": "f-string",
+    "validate_template": true,
+    "_type": "prompt"
+}

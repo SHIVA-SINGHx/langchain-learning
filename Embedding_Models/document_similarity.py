@@ -17,13 +17,13 @@ documents = [
 
 query = "Who is Lionel Messi?"
 
-query_vector = embeddings.embed_query(query)
-vectors = embeddings.embed_documents(documents)
+query_vector = embeddings.embed_query(query)  # this is for single query
+vectors = embeddings.embed_documents(documents) # this is for multiple documents
 
 
-similarities = cosine_similarity([query_vector], vectors)
+similarities = cosine_similarity([query_vector], vectors) # here we are comparing the query vector with all the document vectors to get similarity scores
 
-index, score = sorted(list(enumerate(similarities[0])), key=lambda x: x[1], reverse=True)[0]
+index, score = sorted(list(enumerate(similarities[0])), key=lambda x: x[1], reverse=True)[0]  # getting the index and score of the most similar document to the query
 
 print(query)
 print(documents[index])
