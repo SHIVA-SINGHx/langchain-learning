@@ -18,8 +18,8 @@ llm = HuggingFaceEndpoint(
 )
 
 
-model1 = ChatHuggingFace(llm=llm)
-model2 = ChatGoogleGenerativeAI(model="gemini-3-flash-preview", temperature=0.8) #model-2
+model1 = ChatHuggingFace(llm=llm) # model-1
+model2 = ChatGoogleGenerativeAI(model="gemini-3-flash-preview", temperature=0.8) # model-2
 
 
 prompt1 = PromptTemplate(
