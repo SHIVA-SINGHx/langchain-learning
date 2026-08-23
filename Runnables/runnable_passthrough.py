@@ -5,6 +5,7 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.runnables import RunnableSequence, RunnableParallel, RunnablePassthrough
 
+## RunnablePassthrough give us the result same as we pass
 
 load_dotenv()
 

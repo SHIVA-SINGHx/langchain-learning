@@ -6,6 +6,8 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.runnables import RunnableSequence, RunnableParallel, RunnablePassthrough, RunnableLambda
 
 
+## RunnableLambda here we can pass lambda function or normal function into RunnableLambda
+
 load_dotenv()
 
 
